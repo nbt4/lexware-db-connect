@@ -1,0 +1,4 @@
+imap-tools
+mysql-connector-python
+pdfplumber
+python-dotenv
