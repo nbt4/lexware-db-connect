@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+=======
 import tempfile
 import re
 from imap_tools import MailBox, AND
@@ -89,6 +90,7 @@ def process_mailbox(host: str, user: str, password: str, db_conf: dict, folder: 
 
 def main():
     load_dotenv()
+=======
     db_conf = {
         "host": os.getenv("MYSQL_HOST", "localhost"),
         "user": os.getenv("MYSQL_USER", "root"),
