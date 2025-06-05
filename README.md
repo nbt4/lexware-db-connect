@@ -19,7 +19,14 @@ need adjustments to match your invoice layout.
 pip install -r requirements.txt
 ```
 
-2. Provide connection details through environment variables:
+2. Copy `.env.example` to `.env` and fill in your connection details:
+
+```bash
+cp .env.example .env
+# edit .env and provide the necessary credentials
+```
+
+The following variables must be set in `.env`:
 
 - `IMAP_HOST`, `IMAP_USER`, `IMAP_PASSWORD` – Mailcow IMAP credentials.
 - `IMAP_FOLDER` – Mail folder to check (default `INBOX`).
@@ -28,7 +35,7 @@ pip install -r requirements.txt
 
 ### Running the agent
 
-After configuring the environment variables, run:
+Once the `.env` file contains your credentials, run:
 
 ```bash
 python invoice_agent.py
